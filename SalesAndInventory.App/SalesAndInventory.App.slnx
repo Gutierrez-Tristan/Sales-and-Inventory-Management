@@ -1,3 +1,7 @@
 <Solution>
   <Project Path="SalesAndInventory.App/SalesAndInventory.App.csproj" />
+  <Project Path="SalesAndInventoryDB/SalesAndInventoryDB.sqlproj" Id="f603ae67-e92a-49a3-bae1-7ca3275b8631">
+    <Build />
+    <Deploy />
+  </Project>
 </Solution>
