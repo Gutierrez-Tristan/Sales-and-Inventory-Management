@@ -1,6 +1,6 @@
 ﻿namespace SalesAndInventory.App
 {
-    partial class Form1
+    partial class frmLogin
     {
         /// <summary>
         ///  Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmLogin));
             label1 = new Label();
             label2 = new Label();
             label3 = new Label();
@@ -36,10 +36,10 @@
             txtPassword = new TextBox();
             pictureBox1 = new PictureBox();
             panel1 = new Panel();
+            label6 = new Label();
+            label5 = new Label();
             label4 = new Label();
             linkLabel1 = new LinkLabel();
-            label5 = new Label();
-            label6 = new Label();
             btnLogin = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             panel1.SuspendLayout();
@@ -110,6 +110,28 @@
             panel1.Size = new Size(294, 635);
             panel1.TabIndex = 5;
             // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Font = new Font("Stencil", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label6.ForeColor = SystemColors.ButtonHighlight;
+            label6.Location = new Point(78, 443);
+            label6.Name = "label6";
+            label6.Size = new Size(142, 24);
+            label6.TabIndex = 2;
+            label6.Text = "INVEXA Corp.";
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Font = new Font("Segoe UI Variable Display", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            label5.ForeColor = SystemColors.ButtonHighlight;
+            label5.Location = new Point(69, 143);
+            label5.Name = "label5";
+            label5.Size = new Size(170, 40);
+            label5.TabIndex = 1;
+            label5.Text = "Get Started";
+            // 
             // label4
             // 
             label4.AutoSize = true;
@@ -130,28 +152,6 @@
             linkLabel1.TabStop = true;
             linkLabel1.Text = "Sign here";
             // 
-            // label5
-            // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI Variable Display", 18F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label5.ForeColor = SystemColors.ButtonHighlight;
-            label5.Location = new Point(69, 143);
-            label5.Name = "label5";
-            label5.Size = new Size(170, 40);
-            label5.TabIndex = 1;
-            label5.Text = "Get Started";
-            // 
-            // label6
-            // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Stencil", 12F, FontStyle.Regular, GraphicsUnit.Point, 0);
-            label6.ForeColor = SystemColors.ButtonHighlight;
-            label6.Location = new Point(78, 443);
-            label6.Name = "label6";
-            label6.Size = new Size(142, 24);
-            label6.TabIndex = 2;
-            label6.Text = "INVEXA Corp.";
-            // 
             // btnLogin
             // 
             btnLogin.BackColor = Color.FromArgb(255, 128, 0);
@@ -163,8 +163,9 @@
             btnLogin.TabIndex = 8;
             btnLogin.Text = "Login";
             btnLogin.UseVisualStyleBackColor = false;
+            btnLogin.Click += btnLogin_Click;
             // 
-            // Form1
+            // frmLogin
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -180,9 +181,8 @@
             Controls.Add(label2);
             Controls.Add(label1);
             Margin = new Padding(3, 4, 3, 4);
-            Name = "Form1";
-            Text = "Form1";
-            Load += Form1_Load;
+            Name = "frmLogin";
+            Text = "frmLogin";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
